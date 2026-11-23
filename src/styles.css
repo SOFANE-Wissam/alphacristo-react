@@ -386,3 +386,11 @@ h4 { font-size: 1rem; font-weight: 700; }
 .footer-legal p { margin: 0; max-width: none; }
 @media (max-width: 960px) { .site-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .site-footer__grid { grid-template-columns: 1fr; } }
+/* ---------- Carousel on mobile / tablet ---------- */
+@media (max-width: 860px) {
+  .carousel { --zoom: 1; --lift: 0%; }
+  .hero__visual { padding-top: 1.5rem; }
+  .carousel__stage { height: min(80vw, 420px); }
+  .carousel__slide { width: 78%; margin-left: -39%; }
+  .carousel__bar { padding-top: 0.75rem; }
+}
